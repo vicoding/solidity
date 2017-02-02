@@ -1,6 +1,7 @@
 ### 0.4.10 (unreleased)
 
 Features:
+ * Type checker: Warn when builtin symbols (e.g. ``keccak256``, ``msg``, etc.) are overridden.
  * Type system: Support explicit conversion of external function to address.
 
 Bugfixes:
