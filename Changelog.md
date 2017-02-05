@@ -1,6 +1,7 @@
 ### 0.4.10 (unreleased)
 
 Features:
+ * Introduce ``.transfer(value)`` for sending Ether.
  * Type system: Support explicit conversion of external function to address.
 
 Bugfixes:
