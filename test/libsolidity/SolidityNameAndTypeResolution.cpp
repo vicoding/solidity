@@ -5078,6 +5078,21 @@ BOOST_AUTO_TEST_CASE(invalid_address_length)
 	CHECK_WARNING(text, "checksum");
 }
 
+BOOST_AUTO_TEST_CASE(using_this_in_constructor)
+{
+	char const* text = R"(
+		contract C {
+			function C() {
+				this.f();
+			}
+
+			function f() {
+			}
+		}
+	)";
+	CHECK_WARNING(text, "\"this\" used in constructor");
+}
+
 BOOST_AUTO_TEST_SUITE_END()
 
 }

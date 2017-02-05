@@ -2,6 +2,7 @@
 
 Features:
  * Type system: Support explicit conversion of external function to address.
+ * Type checker: Warn if using ``this`` in a constructor.
 
 Bugfixes:
  * Type system: Disallow arrays with negative length.
