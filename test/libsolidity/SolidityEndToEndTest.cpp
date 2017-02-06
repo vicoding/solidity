@@ -1687,6 +1687,9 @@ BOOST_AUTO_TEST_CASE(transfer_ether)
 			function b(address addr, uint amount) {
 				addr.transfer(amount);
 			}
+			function c(address addr, uint amount, uint gas) {
+				addr.transfer.gas(gas)(amount);
+			}
 		}
 
 		contract B {
